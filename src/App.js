@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
 import Table from './Table'
 import Form from './Form'
 import { characters } from './data'
@@ -57,22 +56,18 @@ class App extends Component {
 
     return (
       <div className="container">
-        <div className="tableSubContainer">
-          <Table
-            characterData={characters}
-            removeCharacter={this.removeCharacter}
-          />
-        </div>
-
-        <div className="formSubContainer">
-          <Form handleSubmit={this.handleSubmit} />
-        </div>
-
-        <div className="apiSubContainer">
-          {
-            result
-          }
-        </div>
+        <h1>React Tutorial</h1>
+        <p>Add a character with a name and a job to the table.</p>
+        <Table
+          characterData={characters}
+          removeCharacter={this.removeCharacter}
+        />
+        <h3>Add New</h3>
+        <Form handleSubmit={this.handleSubmit} />
+        <h3>Fetch data in from API</h3>
+        {
+          result
+        }
       </div>
 
       // <div className="App">
