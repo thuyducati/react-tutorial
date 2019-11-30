@@ -20,3 +20,50 @@
 .App-link {
   color: #09d3ac;
 }
+
+.container {
+  width: 50%;
+  margin: 100px;
+  background-color: lightgray;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.tableSubContainer {
+  width: 50%;
+  background-color: lightblue;
+}
+
+.formSubContainer {
+  width: 50%;
+  background-color: lightgreen;
+  text-align: right;
+}
+
+.apiSubContainer {
+  width: 50%;
+  background-color: lightsalmon
+}
+
+.headerStyles, .bodyStyles, .th, .td {
+  border-bottom: 1px solid black;
+}
+
+.th, .td {
+  padding: 10px;
+  text-align: center;
+}
+
+.tableStyles {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.deleteBtn {
+  border-radius: 2px;
+  outline-color: red; /* using this to confirm */
+  background-color: white;
+  color: red;
+  font-weight: bold;
+}
